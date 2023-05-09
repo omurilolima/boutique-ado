@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gd9t-%hgd(jrdxb4$v5*(i!_xq5n3lwp@5^yc4_@xlwqkxs$p#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-omurilolima-boutique-ado-3yomqghbfd.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-omurilolima-boutique-ado-snfse7wwd0.us2.codeanyapp.com']
 
 
 # Application definition
