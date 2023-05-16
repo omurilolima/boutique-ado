@@ -1,0 +1,12 @@
+{
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.renderWhitespace": "none",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoIndent": "none",
+    "editor.formatOnSaveMode": "file",
+    "scss.format.spaceAroundSelectorSeparator": true,
+    "prettier.embeddedLanguageFormatting": "off",
+    "[html]": {
+        "editor.defaultFormatter": "monosans.djlint"
+    }
+}
