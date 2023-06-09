@@ -34,8 +34,8 @@ body {
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: black !important;
+    color: white !important;
 }
 
 .btn-outline-black {
