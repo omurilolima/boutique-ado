@@ -10,7 +10,7 @@ body {
     font-family: 'Lato';
 }
 
-/* From Bulma */
+/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -34,15 +34,15 @@ body {
 }
 
 .btn-black {
-    background: black !important;
-    color: white !important;
+    background: black;
+    color: white;
 }
 
 .btn-outline-black {
     background: white;
     color: black !important;
-    /* Use important to override link colors for <a> elements */
-    border: 1px solid black !important;
+    /* use important to override link colors for <a> elements */
+    border: 1px solid black;
 }
 
 .btn-outline-black:hover,
@@ -59,7 +59,7 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: white !important;
+    color: white;
 }
 
 .text-black {
@@ -103,7 +103,11 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* --------------------------------- Bootstrap toasts */
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+/* ------------------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -120,8 +124,7 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
-/* From CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle */
-
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0;
     height: 0;
@@ -133,7 +136,7 @@ a.category-badge > span.badge:hover {
     right: 36px;
 }
 
-/* Convenience classes - Colors copied from Bootstrap */
+/* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -162,7 +165,7 @@ a.category-badge > span.badge:hover {
     border-bottom-color: #f8f9fa !important;
 }
 
-.arrow-primary {
+.arrow-dark {
     border-bottom-color: #343a40 !important;
 }
 
@@ -179,18 +182,66 @@ a.category-badge > span.badge:hover {
     .container {
         max-width: 80%;
     }
-
-}
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
-    }
 }
 
-/* Fixed top navbar only on medium and up */
+/* Allauth form formatting */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    /* btn */
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+    color: #17a2b8;
+    /* text-info */
+}
+
+/* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -205,7 +256,7 @@ a.category-badge > span.badge:hover {
     }
 }
 
-/* Pad the top a bit when navbar is collapsed on mobile */
+/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
